@@ -1,6 +1,8 @@
-# Title (replace with your title)
+# Regex Tutorial
+A Regex is shorthand for regular expressions.
+A Regex is a string of text that lets you create patterns that help match,locate,and manage text.
+These expressions are extremely useful for extracting data like phone numbers,emails, that follow a specific pattern from text. They can also be used in conjunction with any programming language including JavaScript.
 
-Introductory paragraph (replace this with your text)
 
 ## Summary
 
