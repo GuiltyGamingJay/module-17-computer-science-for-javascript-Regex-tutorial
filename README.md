@@ -38,6 +38,8 @@ Briefly summarize the regex you will be describing and what you will explain. In
 '^' (caret): matches the beginning of a string
 
 '$' (dollar sign): matches the end of a string
+<br>
+<br>
 
 ### Anchors
 
@@ -48,7 +50,8 @@ Briefly summarize the regex you will be describing and what you will explain. In
 '^' - Matches the start of the string.
 
 '$' - Matches the end of the string.
-
+<br>
+<br>
 
 ### Quantifiers
 Quantifiers allow you to specify how many times a character or group of characters should be matched. Some common quantifiers include:
@@ -60,9 +63,11 @@ Quantifiers allow you to specify how many times a character or group of characte
 
 '{m}' - Matches exactly m occurrences of the previous character or group.
 '{m,n}' - Matches between m and n occurrences of the previous character or group.
-
+<br>
+<br>
 ### OR Operator
 The "or" operator is denoted by the vertical bar | character. For example, the pattern cat|dog would match either "cat" or "dog". You can also use parentheses to group patterns together with the "or" operator. For example, the pattern (red|blue) car would match either "red car" or "blue car".
+<br>
 
 It's worth noting that the "or" operator has lower precedence than other operators, such as quantifiers and anchors. This means that if you use the "or" operator in a complex regex, you may need to use parentheses to group patterns together and ensure that the operator is applied correctly.
 
@@ -73,7 +78,8 @@ Here are some additional examples of how to use the "or" operator in regular exp
 -apple|orange|banana matches "apple", "orange", or "banana"
 
 -(http|https)://www.example.com matches URLs that start with "http://www.example.com" or "https://www.example.com
-
+<br>
+<br>
 ### Character Classes
 
 Character classes allow you to match specific types of characters. Some common character classes include:
@@ -85,10 +91,43 @@ Character classes allow you to match specific types of characters. Some common c
 '\s': matches any whitespace character (space, tab, newline, etc.).
 
 '[]': matches any single character in the brackets.
-
+<br>
+<br>
 ### Flags
+Flags are modifiers that can change the behavior of the pattern matching. Flags are usually specified after the closing delimiter of the regular expression and are denoted by a single letter.
 
+Here are some common flags and their meanings:
+<br>
+<br>
+'i' (case-insensitive): Makes the matching case-insensitive. For example, the pattern /apple/i would match "apple", "Apple", "aPpLe", and so on.
+
+'g' (global): Matches all occurrences of the pattern in the input string. For example, the pattern /a/g would match all occurrences of the letter "a" in the input string.
+
+'m' (multiline): Allows the ^ and $ anchors to match the beginning and end of each line in a multiline string, instead of just the beginning and end of the entire string.
+
+'s' (dot-all): Allows the . character to match any character, including newlines.
+
+'u' (unicode): Enables full Unicode support. This is useful for matching characters from non-Latin scripts or for working with text that contains characters outside the ASCII range.
+
+'y' (sticky): Matches the pattern starting at the current position in the string, without backtracking. This flag is useful for finding matches in large strings or for implementing custom text editors.
+
+To use flags in a regular expression, you simply append the flag letter after the closing delimiter of the expression. For example, the pattern /apple/i would match "apple", "Apple", "aPpLe", and so on, because the i flag makes the matching case-insensitive.
+<br>
+<br>
+
+Note that different programming languages and tools may have slightly different syntax for specifying flags, so be sure to consult the documentation for your specific implementation.
+<br>
+<br>
 ### Grouping and Capturing
+Grouping allows you to apply a quantifier to a group of characters. Some common grouping syntax include:
+
+'()' (parentheses): group characters together
+
+'|' (pipe): match one of several possible patterns
+
+'(?)' (non-capturing parentheses): group characters without capturing the match
+<br>
+<br>
 
 ### Bracket Expressions
 
